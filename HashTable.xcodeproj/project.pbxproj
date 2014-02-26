@@ -21,6 +21,8 @@
 		200AA52A18BE90760076E0EA /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 200AA50C18BE90750076E0EA /* UIKit.framework */; };
 		200AA53218BE90760076E0EA /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 200AA53018BE90760076E0EA /* InfoPlist.strings */; };
 		200AA53418BE90760076E0EA /* HashTableTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 200AA53318BE90760076E0EA /* HashTableTests.m */; };
+		200AA53F18BE90900076E0EA /* HashTable.m in Sources */ = {isa = PBXBuildFile; fileRef = 200AA53E18BE90900076E0EA /* HashTable.m */; };
+		200AA54218BE909E0076E0EA /* HashBucket.m in Sources */ = {isa = PBXBuildFile; fileRef = 200AA54118BE909E0076E0EA /* HashBucket.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +55,10 @@
 		200AA52F18BE90760076E0EA /* HashTableTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "HashTableTests-Info.plist"; sourceTree = "<group>"; };
 		200AA53118BE90760076E0EA /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		200AA53318BE90760076E0EA /* HashTableTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HashTableTests.m; sourceTree = "<group>"; };
+		200AA53D18BE90900076E0EA /* HashTable.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HashTable.h; sourceTree = "<group>"; };
+		200AA53E18BE90900076E0EA /* HashTable.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HashTable.m; sourceTree = "<group>"; };
+		200AA54018BE909E0076E0EA /* HashBucket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HashBucket.h; sourceTree = "<group>"; };
+		200AA54118BE909E0076E0EA /* HashBucket.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HashBucket.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,6 +88,10 @@
 		200AA4FC18BE90750076E0EA = {
 			isa = PBXGroup;
 			children = (
+				200AA53D18BE90900076E0EA /* HashTable.h */,
+				200AA53E18BE90900076E0EA /* HashTable.m */,
+				200AA54018BE909E0076E0EA /* HashBucket.h */,
+				200AA54118BE909E0076E0EA /* HashBucket.m */,
 				200AA50E18BE90750076E0EA /* HashTable */,
 				200AA52D18BE90760076E0EA /* HashTableTests */,
 				200AA50718BE90750076E0EA /* Frameworks */,
@@ -250,8 +260,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				200AA54218BE909E0076E0EA /* HashBucket.m in Sources */,
 				200AA51F18BE90750076E0EA /* CAMViewController.m in Sources */,
 				200AA51918BE90750076E0EA /* CAMAppDelegate.m in Sources */,
+				200AA53F18BE90900076E0EA /* HashTable.m in Sources */,
 				200AA51518BE90750076E0EA /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
